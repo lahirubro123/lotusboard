@@ -37,7 +37,7 @@ services:
       - './crontabs.conf:/etc/crontabs/root'
       - './.caddy:/root/.caddy'
     ports:
-      - '80:80' <--- Modify if you want to reverse proxy, Eg (443tls -> caddy -> 8080), format is host:container
+      - '12500:80' <--- Modify if you want to reverse proxy, Eg (443tls -> caddy -> 8080), format is host:container
     restart: always
     links:
       - mysql
