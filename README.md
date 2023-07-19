@@ -1,4 +1,12 @@
 # Lotusboard
+### Backup v2board 
+```
+ls
+lotusboard-docker/ tmp/
+tar zcf lotusboard-backup.tar.gz ./lotusboard-docker
+ls
+lotusboard-docker/ tmp/ lotusboard-backup.tar.gz
+```
 ### Restore Backup
 ```
 tar xf lotusboard-backup.tar.gz
